@@ -20,5 +20,4 @@ public class CountVowelsAndConsonants {
 		System.out.println("Total Vowels : " + vowels);
 		System.out.println("Total Consonants : " + consonants);
 	}
-
 }
