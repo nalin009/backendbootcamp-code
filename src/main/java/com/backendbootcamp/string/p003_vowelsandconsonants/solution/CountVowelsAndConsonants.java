@@ -1,6 +1,6 @@
 package com.backendbootcamp.string.p003_vowelsandconsonants.solution;
 
-public class VowelsAndConsonants {
+public class CountVowelsAndConsonants {
 
 	public static void main(String[] args) {
 		String name = "Nalin Sahu";
