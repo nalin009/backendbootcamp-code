@@ -1,4 +1,4 @@
-package com.backendbootcamp.string.reversestring.solution;
+package com.backendbootcamp.string.p001_reversestring.solution;
 
 public class ReverseStringWithOutUsingMethod {
 
