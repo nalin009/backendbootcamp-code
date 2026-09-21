@@ -1,0 +1,70 @@
+{
+"id": "find-first-repeated-character",
+"problemNumber": 6,
+"title": "Find First Repeated Character",
+"category": "Core Java",
+"topic": "String",
+"difficulty": "Easy",
+"description": "Given a string, find the first character that appears more than once. If no character is repeated, indicate that no repeated character exists.",
+"input": "A string in which the first repeated character needs to be found.",
+"output": "The first character that is repeated in the string. If no character is repeated, indicate that no repeated character exists.",
+"examples": [
+{
+"input": "swiss",
+"output": "s",
+"explanation": "The character 's' appears again after its first occurrence, making it the first repeated character."
+},
+{
+"input": "hello",
+"output": "l",
+"explanation": "The character 'l' is the first character encountered whose second occurrence is found."
+},
+{
+"input": "java",
+"output": "a",
+"explanation": "The character 'a' appears more than once and is the first repeated character."
+},
+{
+"input": "abc",
+"output": "No repeated character",
+"explanation": "Every character occurs only once, so there is no repeated character."
+}
+],
+"constraints": [
+"The input must be a valid string."
+],
+"approaches": [
+{
+"id": "using-set",
+"name": "Using HashSet",
+"description": "Traverse the string from left to right and store each character in a HashSet. If a character is already present in the set, it is the first repeated character.",
+"whenToUse": "Use when you need to find the first repeated character efficiently while traversing the string once.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(k)",
+"solutionFile": "FirstRepeatedCharacter.java"
+}
+],
+"recommendedApproach": "using-set",
+"keyConcepts": [
+"String",
+"HashSet",
+"Character traversal",
+"Duplicate detection",
+"Iteration"
+],
+"tags": [
+"java",
+"core-java",
+"string",
+"hashset",
+"repeated-character",
+"duplicate",
+"interview"
+],
+"interviewTips": [
+"Understand why a HashSet is useful for detecting duplicates.",
+"Traverse the string from left to right to preserve the required order.",
+"The first character already present in the set is the first repeated character.",
+"Be prepared to explain the time and space complexity."
+]
+}
