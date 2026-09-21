@@ -1,6 +1,7 @@
 package com.backendbootcamp.string.p004_characterfrequency.solution;
 
-import java.util.*;
+import java.util.Map;
+import java.util.HashMap;
 
 public class CountCharacterFrequency {
 
