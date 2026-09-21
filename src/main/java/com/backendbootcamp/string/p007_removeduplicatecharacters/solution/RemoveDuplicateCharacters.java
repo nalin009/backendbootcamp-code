@@ -7,22 +7,20 @@ public class RemoveDuplicateCharacters {
 
 	public static void main(String[] args) {
 		String name = "Nalin Sahu";
-		
-		//sanitize the input string
+
+		// sanitize the input string
 		name = name.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-		
-		//Remove Duplicate Characters
+
+		// Remove Duplicate Characters
 		Set<Character> seen = new LinkedHashSet<>();
 		StringBuilder sb = new StringBuilder();
-		
-		for(char ch : name.toCharArray()){
-			seen.add(ch);
+
+		for (char ch : name.toCharArray()) {
+			if(seen.add(ch)) {
+				sb.append(ch);
+			}
 		}
-		
-		for(char ch: seen){
-			sb.append(ch);
-		}
-		
+
 		System.out.println(sb.toString());
 
 	}
