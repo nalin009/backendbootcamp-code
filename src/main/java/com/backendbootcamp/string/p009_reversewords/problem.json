@@ -1,0 +1,70 @@
+{
+"id": "reverse-words-in-a-sentence",
+"problemNumber": 9,
+"title": "Reverse Words in a Sentence",
+"category": "Core Java",
+"topic": "String",
+"difficulty": "Easy",
+"description": "Given a sentence containing multiple words, reverse the order of the words while keeping the characters within each word unchanged.",
+"input": "A sentence containing multiple words separated by whitespace.",
+"output": "The sentence with the order of its words reversed.",
+"examples": [
+{
+"input": "Java is powerful",
+"output": "powerful is Java",
+"explanation": "The order of the words is reversed, but the characters within each word remain unchanged."
+},
+{
+"input": "I love Java",
+"output": "Java love I",
+"explanation": "The words are arranged from last to first."
+},
+{
+"input": "Hello World",
+"output": "World Hello",
+"explanation": "The two words exchange their positions."
+},
+{
+"input": "Spring Boot is easy",
+"output": "easy is Boot Spring",
+"explanation": "The sentence words are reversed while each individual word remains unchanged."
+}
+],
+"constraints": [
+"Words are separated by whitespace.",
+"Leading and trailing whitespace should not affect the result."
+],
+"approaches": [
+{
+"id": "split-and-reverse",
+"name": "Using Split and Reverse Traversal",
+"description": "Split the sentence into individual words and traverse the resulting array from the last word to the first word to construct the reversed sentence.",
+"whenToUse": "Use when built-in String methods are allowed and the goal is to reverse word order without changing the characters inside each word.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(n)",
+"solutionFile": "ReverseWords.java"
+}
+],
+"recommendedApproach": "split-and-reverse",
+"keyConcepts": [
+"String",
+"String split",
+"Array",
+"Reverse traversal",
+"String manipulation"
+],
+"tags": [
+"java",
+"core-java",
+"string",
+"reverse-words",
+"string-manipulation",
+"interview"
+],
+"interviewTips": [
+"Understand the difference between reversing a string and reversing the order of its words.",
+"Handle multiple spaces and leading or trailing whitespace carefully.",
+"Remember that the characters inside each individual word must remain unchanged.",
+"Be prepared to explain the time and space complexity."
+]
+}
