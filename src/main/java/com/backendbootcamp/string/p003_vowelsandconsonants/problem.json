@@ -1,0 +1,64 @@
+
+"id": "count-vowels-and-consonants",
+"problemNumber": 3,
+"title": "Count Vowels and Consonants",
+"category": "Core Java",
+"topic": "String",
+"difficulty": "Easy",
+"description": "Given a string containing alphabetic characters, count the number of vowels and consonants present in the string.",
+"input": "A string containing alphabetic characters.",
+"output": "The count of vowels and consonants in the given string.",
+"examples": [
+{
+"input": "Hello",
+"output": "Vowels: 2, Consonants: 3",
+"explanation": "The vowels are 'e' and 'o'. The consonants are 'H', 'l', and 'l'."
+},
+{
+"input": "Java",
+"output": "Vowels: 2, Consonants: 2",
+"explanation": "The vowels are 'a' and 'a'. The consonants are 'J' and 'v'."
+},
+{
+"input": "Backend",
+"output": "Vowels: 2, Consonants: 5",
+"explanation": "The vowels are 'a' and 'e'. The remaining alphabetic characters are consonants."
+}
+],
+"constraints": [
+"Only alphabetic characters are considered.",
+"Vowels are A, E, I, O, U in either uppercase or lowercase."
+],
+"approaches": [
+{
+"id": "character-traversal",
+"name": "Character Traversal",
+"description": "Traverse the string character by character, identify whether each character is a vowel or consonant, and maintain separate counters for both.",
+"whenToUse": "Use when you need a simple and efficient approach to count vowels and consonants while traversing the string once.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(1)",
+"solutionFile": "VowelsAndConsonants.java"
+}
+],
+"recommendedApproach": "character-traversal",
+"keyConcepts": [
+"String",
+"Character traversal",
+"Conditional statements",
+"Character comparison"
+],
+"tags": [
+"java",
+"core-java",
+"string",
+"vowels",
+"consonants",
+"interview"
+],
+"interviewTips": [
+"Know how to identify vowels in both uppercase and lowercase.",
+"Be clear about whether spaces, digits, and special characters should be counted.",
+"Explain why the string only needs to be traversed once.",
+"Know the time and space complexity of the solution."
+]
+}
