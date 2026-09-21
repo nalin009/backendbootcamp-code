@@ -1,0 +1,77 @@
+{
+"id": "check-palindrome",
+"problemNumber": 2,
+"title": "Check Palindrome",
+"category": "Core Java",
+"topic": "String",
+"difficulty": "Easy",
+"description": "Given a string, determine whether it is a palindrome. A palindrome is a string that reads the same forward and backward.",
+"input": "A string that needs to be checked for palindrome.",
+"output": "Return whether the given string is a palindrome.",
+"examples": [
+{
+"input": "madam",
+"output": "true",
+"explanation": "The string reads the same from left to right and right to left."
+},
+{
+"input": "hello",
+"output": "false",
+"explanation": "The string reads differently forward and backward."
+},
+{
+"input": "level",
+"output": "true",
+"explanation": "The string remains the same when reversed."
+},
+{
+"input": "Java",
+"output": "false",
+"explanation": "The reversed string is different from the original string."
+}
+],
+"constraints": [
+"The input must be a valid string."
+],
+"approaches": [
+{
+"id": "with-built-in-method",
+"name": "Using Built-In Method",
+"description": "Create the reverse of the string using a built-in StringBuilder method and compare it with the original string.",
+"whenToUse": "Use when built-in Java methods are allowed and the goal is to write simple and readable code.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(n)",
+"solutionFile": "CheckPalindromeWithBuiltInMethod.java"
+},
+{
+"id": "without-built-in-method",
+"name": "Without Using Built-In Reverse Method",
+"description": "Compare characters from the beginning and end of the string while moving toward the center. If any pair of characters differs, the string is not a palindrome.",
+"whenToUse": "Use when built-in reverse methods are not allowed or when demonstrating string indexing and two-pointer logic in an interview.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(1)",
+"solutionFile": "CheckPalindromeWithOutBuiltInMethod.java"
+}
+],
+"recommendedApproach": "without-built-in-method",
+"keyConcepts": [
+"String",
+"Palindrome",
+"StringBuilder",
+"Character comparison",
+"Two pointers"
+],
+"tags": [
+"java",
+"core-java",
+"string",
+"palindrome",
+"interview"
+],
+"interviewTips": [
+"Be prepared to solve the problem both with and without built-in methods.",
+"For the manual approach, compare characters from both ends toward the center.",
+"Know why the manual approach can use O(1) extra space.",
+"Be ready to explain the time and space complexity of both approaches."
+]
+}
