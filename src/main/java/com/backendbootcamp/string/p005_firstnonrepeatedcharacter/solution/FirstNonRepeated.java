@@ -28,8 +28,7 @@ public class FirstNonRepeated {
 	public static void main(String[] args) {
 		String name = "Nalin Sahu";
 		char ch = nonRepeating(name);
-		System.out.println("Non Repeated Character : "+ch);
-
+		System.out.println("Non Repeated Character : " + ch);
 	}
 
 }
