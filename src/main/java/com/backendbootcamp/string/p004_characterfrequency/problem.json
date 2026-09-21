@@ -1,0 +1,64 @@
+{
+"id": "count-character-frequency",
+"problemNumber": 4,
+"title": "Count Character Frequency",
+"category": "Core Java",
+"topic": "String",
+"difficulty": "Easy",
+"description": "Given a string, count how many times each character occurs in the string.",
+"input": "A string whose character frequencies need to be counted.",
+"output": "The frequency of each character present in the given string.",
+"examples": [
+{
+"input": "hello",
+"output": "h: 1, e: 1, l: 2, o: 1",
+"explanation": "The character 'l' appears twice, while 'h', 'e', and 'o' each appear once."
+},
+{
+"input": "java",
+"output": "j: 1, a: 2, v: 1",
+"explanation": "The character 'a' appears twice, while 'j' and 'v' appear once."
+},
+{
+"input": "apple",
+"output": "a: 1, p: 2, l: 1, e: 1",
+"explanation": "The character 'p' appears twice, while the other characters appear once."
+}
+],
+"constraints": [
+"The input must be a valid string."
+],
+"approaches": [
+{
+"id": "character-frequency-map",
+"name": "Using Character Frequency Map",
+"description": "Traverse the string and maintain the frequency of each character using a map. Increment the count whenever a character is encountered.",
+"whenToUse": "Use when you need to count occurrences of characters efficiently and store the frequency of each distinct character.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(k)",
+"solutionFile": "CountCharacterFrequency.java"
+}
+],
+"recommendedApproach": "character-frequency-map",
+"keyConcepts": [
+"String",
+"HashMap",
+"Character frequency",
+"Map",
+"Iteration"
+],
+"tags": [
+"java",
+"core-java",
+"string",
+"hashmap",
+"frequency",
+"interview"
+],
+"interviewTips": [
+"Understand how HashMap stores a character as a key and its frequency as the value.",
+"Know how to update an existing character count.",
+"Be prepared to explain why the solution requires O(k) extra space, where k is the number of distinct characters.",
+"Clarify whether uppercase and lowercase characters should be treated as different characters."
+]
+}
