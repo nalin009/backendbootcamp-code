@@ -1,0 +1,70 @@
+{
+"id": "find-first-non-repeated-character",
+"problemNumber": 5,
+"title": "Find First Non-Repeated Character",
+"category": "Core Java",
+"topic": "String",
+"difficulty": "Easy",
+"description": "Given a string, find the first character that occurs only once in the string. If every character is repeated, indicate that no non-repeated character exists.",
+"input": "A string in which the first non-repeated character needs to be found.",
+"output": "The first character that occurs exactly once in the string. If no such character exists, indicate that no non-repeated character is present.",
+"examples": [
+{
+"input": "swiss",
+"output": "w",
+"explanation": "The characters 's' and 'i' are repeated, while 'w' occurs only once. Therefore, 'w' is the first non-repeated character."
+},
+{
+"input": "aabbc",
+"output": "c",
+"explanation": "The characters 'a' and 'b' are repeated, while 'c' occurs only once."
+},
+{
+"input": "aabb",
+"output": "No non-repeated character",
+"explanation": "Every character occurs more than once, so there is no non-repeated character."
+},
+{
+"input": "leetcode",
+"output": "l",
+"explanation": "The character 'l' occurs only once and appears before the other non-repeated characters."
+}
+],
+"constraints": [
+"The input must be a valid string."
+],
+"approaches": [
+{
+"id": "frequency-map",
+"name": "Using Character Frequency Map",
+"description": "Count the frequency of each character using a map, then traverse the string again from left to right and return the first character whose frequency is one.",
+"whenToUse": "Use when you need to efficiently determine character frequencies while preserving the original order to find the first non-repeated character.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(k)",
+"solutionFile": "FirstNonRepeated.java"
+}
+],
+"recommendedApproach": "frequency-map",
+"keyConcepts": [
+"String",
+"HashMap",
+"Character frequency",
+"Iteration",
+"First occurrence"
+],
+"tags": [
+"java",
+"core-java",
+"string",
+"hashmap",
+"frequency",
+"non-repeated-character",
+"interview"
+],
+"interviewTips": [
+"Understand the difference between a non-repeated character and the first non-repeated character.",
+"A frequency map can be used to count each character before identifying the first character with frequency one.",
+"Preserve the original string order when searching for the first non-repeated character.",
+"Be prepared to explain the time and space complexity."
+]
+}
