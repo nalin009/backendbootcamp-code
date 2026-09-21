@@ -1,0 +1,71 @@
+{
+"id": "remove-duplicate-characters",
+"problemNumber": 7,
+"title": "Remove Duplicate Characters",
+"category": "Core Java",
+"topic": "String",
+"difficulty": "Easy",
+"description": "Given a string, remove duplicate characters while preserving the original order of the first occurrence of each character.",
+"input": "A string from which duplicate characters need to be removed.",
+"output": "A string containing only the first occurrence of each character, with the original order preserved.",
+"examples": [
+{
+"input": "programming",
+"output": "progamin",
+"explanation": "Repeated characters are removed while the first occurrence of each character remains in its original position."
+},
+{
+"input": "hello",
+"output": "helo",
+"explanation": "The second occurrence of 'l' is removed while the first occurrence is preserved."
+},
+{
+"input": "banana",
+"output": "ban",
+"explanation": "The first occurrences of 'b', 'a', and 'n' are preserved and subsequent duplicates are removed."
+},
+{
+"input": "abc",
+"output": "abc",
+"explanation": "There are no duplicate characters, so the string remains unchanged."
+}
+],
+"constraints": [
+"The input must be a valid string."
+],
+"approaches": [
+{
+"id": "using-set",
+"name": "Using Set",
+"description": "Traverse the string from left to right and use a Set to keep track of characters that have already been encountered. Add a character to the result only when it has not appeared before.",
+"whenToUse": "Use when duplicate characters need to be removed efficiently while preserving the order of their first occurrence.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(k)",
+"solutionFile": "RemoveDuplicateCharacters.java"
+}
+],
+"recommendedApproach": "using-set",
+"keyConcepts": [
+"String",
+"Set",
+"HashSet",
+"Duplicate removal",
+"Character traversal",
+"Order preservation"
+],
+"tags": [
+"java",
+"core-java",
+"string",
+"hashset",
+"duplicates",
+"string-manipulation",
+"interview"
+],
+"interviewTips": [
+"Understand why a Set is useful for tracking characters that have already appeared.",
+"Make sure the original order of the first occurrence is preserved.",
+"Know the difference between removing duplicates and sorting unique characters.",
+"Be prepared to explain the time and space complexity."
+]
+}
