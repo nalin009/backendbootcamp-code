@@ -1,0 +1,69 @@
+{
+"id": "count-words-in-a-string",
+"problemNumber": 8,
+"title": "Count Words in a String",
+"category": "Core Java",
+"topic": "String",
+"difficulty": "Easy",
+"description": "Given a string containing words separated by whitespace, count the total number of words in the string.",
+"input": "A string containing one or more words separated by spaces or other whitespace characters.",
+"output": "The total number of words present in the string.",
+"examples": [
+{
+"input": "Java is easy",
+"output": "3",
+"explanation": "The string contains three words: Java, is, and easy."
+},
+{
+"input": "I love Java",
+"output": "3",
+"explanation": "The string contains three words: I, love, and Java."
+},
+{
+"input": "Hello",
+"output": "1",
+"explanation": "The string contains only one word."
+},
+{
+"input": "Java Spring Boot",
+"output": "3",
+"explanation": "Multiple spaces between words do not create additional words."
+}
+],
+"constraints": [
+"Words are separated by whitespace.",
+"Leading and trailing whitespace should not be counted as words."
+],
+"approaches": [
+{
+"id": "split-whitespace",
+"name": "Using String Split",
+"description": "Split the string using a whitespace pattern and count the resulting words.",
+"whenToUse": "Use when built-in String methods are allowed and the input consists of words separated by whitespace.",
+"timeComplexity": "O(n)",
+"spaceComplexity": "O(n)",
+"solutionFile": "CountWords.java"
+}
+],
+"recommendedApproach": "split-whitespace",
+"keyConcepts": [
+"String",
+"String split",
+"Whitespace",
+"String manipulation"
+],
+"tags": [
+"java",
+"core-java",
+"string",
+"words",
+"string-manipulation",
+"interview"
+],
+"interviewTips": [
+"Consider multiple spaces between words.",
+"Consider leading and trailing spaces.",
+"Know how the split() method works with regular expressions.",
+"Be prepared to explain the time and space complexity."
+]
+}
